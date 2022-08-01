@@ -15,6 +15,7 @@ jobs:
       matrix:
         distro:
           - centos8
+          - rockylinux8
 
     steps:
       - name: Check out the codebase.
