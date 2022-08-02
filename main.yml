@@ -25,12 +25,6 @@
       ansible.builtin.package:
         name: "{{ apache_package }}"
         state: present
-        
-    - name: Change Apache Port to 8080.
-      ansible.builtin.lineinfile:
-        path: /etc/httpd/conf/httpd.conf
-        regexp: '^Listen '
-        line: 'Listen 8080'
 
     - name: Copy a web page.
       ansible.builtin.copy:
