@@ -17,6 +17,7 @@ jobs:
           - centos8
           - rockylinux8
           - rockylinux9
+          - amazonlinux2023
 
     steps:
       - name: Check out the codebase.
