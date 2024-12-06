@@ -1,6 +1,16 @@
 ---
 name: CI
 'on':
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
   pull_request:
   push:
     branches:
